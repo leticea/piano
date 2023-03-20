@@ -21,3 +21,16 @@ body {
   align-items: center;
   //justify-content: space-between;
 }
+
+.controls {
+  color: rgba(255, 255, 255, 0.8);
+  padding: 30px;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.controls h1 {
+  font-weight: 500;
+  font-size: 1.4rem;
+}
