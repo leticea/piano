@@ -1,6 +1,12 @@
 const keys = document.querySelectorAll(".key");
 
+const playNote = (note) => {
+  const audio = new Audio("../notes/1.wav");
+  audio.play();
+};
+
 const handleMouseDown = (key) => {
+  playNote()
   if (key.className.includes("black")) {
     key.classList.add("black-pressed");
     return;
