@@ -43,3 +43,7 @@ checkbox.addEventListener("change", ({ target }) => {
   switcher.classList.remove("switcher-active");
   keysSection.classList.add("disabled-keys");
 });
+
+document.addEventListener("keydown", (event) => {
+
+})
