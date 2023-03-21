@@ -1,4 +1,6 @@
 const keys = document.querySelectorAll(".key");
+const checkbox = document.querySelector(".checkbox_keys");
+const switcher = document.querySelector(".switcher");
 
 const playNote = (note) => {
   const audio = new Audio(`../notes/${note}.wav`);
@@ -28,4 +30,13 @@ const handleMouseUp = (key) => {
 keys.forEach((key) => {
   key.addEventListener("mousedown", () => handleMouseDown(key));
   key.addEventListener("mouseup", () => handleMouseUp(key));
+});
+
+checkbox.addEventListener("change", ({ target }) => {
+  if (target.checked) {
+    switcher.classList.add("switcher-active");
+    return;
+  }
+
+  switcher.classList.remove("switcher-active");
 });

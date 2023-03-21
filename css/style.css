@@ -53,7 +53,7 @@ body {
 
 .switcher-active {
   background-color: #006eff;
-  //justify-content: flex-end;
+  justify-content: flex-end;
   animation: slide-in 0.3s forwards;
 }
 
