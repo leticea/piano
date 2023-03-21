@@ -122,6 +122,12 @@ body {
   user-select: none;
 }
 
+.black-pressed {
+  background: linear-gradient(#222, #000);
+  border-bottom: none;
+  height: 148px;
+}
+
 @keyframes slide-in {
   from {
     left: 0;
